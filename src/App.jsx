@@ -1,6 +1,6 @@
 import { Navbar } from './components/Navbar'
 import { Button } from 'react-bootstrap'
-import { Content } from './components/content'
+import { Content } from './components/Content'
 import { Proyects } from './components/Proyects'
 import { FrameWorks } from './components/FrameWorks'
 import { CallMe } from './components/CallME'
