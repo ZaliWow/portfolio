@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap'
 import { Content } from './components/Content'
 import { Proyects } from './components/Proyects'
 import { FrameWorks } from './components/FrameWorks'
-import { CallMe } from './components/CallME'
+import { CallMe } from './components/CallMe'
 import { AbautMe } from './components/AbautMe'
 import {  Pie } from "./components/Pie";
 
