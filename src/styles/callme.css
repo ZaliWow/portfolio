@@ -1,0 +1,123 @@
+
+.bodycallme{
+    display: block;
+    margin-left: 30vw;
+    margin-top: 5vw;
+    width: 68.5vw;
+    height: 70vh;
+  text-align: center;
+   border-bottom: 1px solid;
+  }
+
+
+.callme{
+    display: flex; 
+    justify-content: center; 
+   margin-top: 4%;
+}
+.contact{
+    margin-top: 2%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    width: 120px;
+    height: 80px;
+    
+    margin: 1px;
+}
+.contact button {
+    border:0;
+    background-color: white;
+}
+.descargarcv {
+
+    width: 200px;
+    height: 90px;
+    background-color: rgb(168, 19, 62);
+    color: white;
+    font-family: 'Press Start 2P';
+    border-radius: 15%;
+    border: 0;
+    font-size: large;
+    box-shadow: 0 5px 10px rgba(168, 19, 62);
+      overflow: hidden;
+  position: relative;
+}
+.descargarcv:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 400px;
+    background: rgba(168, 19, 62);
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    pointer-events: none;
+  }
+/* Efecto al pasar el mouse sobre el botón */
+.descargarcv:hover:before {
+    transform: scale(3);
+    opacity: 0;
+  }
+  
+  /* Transición suave para el cambio de color de fondo */
+  .descargarcv:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    box-shadow: 0 5px 10px rgb(255, 255, 255);
+  }
+  .arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #000000; /* Puedes cambiar el color de la flecha aquí */
+    margin: 20px auto; /* Ajusta el margen según tus necesidades */
+  }
+  .info{
+    justify-content: end;
+  text-align:start;
+  padding: 30px 100px;
+  font-family: 'Press Start 2P';
+ 
+    
+  }
+  .desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 200px;
+  
+
+   
+  }
+  .svg-imagen {
+    position: absolute;
+    order: 0;
+    width: 50%;
+    height: auto;
+    z-index: -1;
+
+  }
+  @media screen and (max-width : 899px){
+    .bodycallme{
+      display: block;
+      background-color: red;
+      margin-left: 50%;
+      margin-right: 50%;
+      margin-top: 25%;
+      width: 100%;
+      height: 80vh;
+      justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid;
+
+    }
+  }
+ 

@@ -1,0 +1,58 @@
+.content {
+    display: block;
+    margin-left: 30vw;
+    margin-top: 5vw;
+    width: 68.5vw;
+    height: 80vh;
+    justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid;
+ 
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Press Start 2P';
+    margin-bottom: 50%;
+}
+.tecnologys{
+    display: flex;
+  
+    justify-content: center;
+    
+   margin-top: 2%;
+}
+.tecno{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 190px;
+    height: 180px;
+    
+   
+
+}
+.tecno img{
+    width: 150px;
+    height: 150px;
+    background:none;
+}
+.tecno p{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Press Start 2P';
+}
+@media screen and (max-width : 899px){
+    .content{
+        display: block;
+        background-color: red;
+        margin-left: 50%;
+        margin-right: 50%;
+        margin-top: 25%;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+      text-align: center;
+      border-bottom: 1px solid;
+    }
+}
