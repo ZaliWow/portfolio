@@ -7,8 +7,8 @@ export function Navbar({}) {
 <div>
 <div className="nav">
 
-<img src="src\images\Foto_perfil.jpg" alt="mi foto de perfil" />
-
+<img src="Portfolio/src/images/Foto_perfil.jpg" alt="mi foto de perfil" />
+ 
 <div className="me">
     <h2>Hola, me llamo David.</h2>
 <h5>Ingeniero de Sistemas, enfocado en el desarrollo de soluciones y aplicaciones Frontend.</h5>
