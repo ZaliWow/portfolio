@@ -13,7 +13,7 @@ export function CallMe(params) {
 
 
 const handleDownload =()=>{
-    const pdfUrl ="https://github.com/ZaliWow/Portfolio/blob/main/src/achives/CV%20WILLIAM%20DAVID%20MORALES%20PINEDA.pdf"
+    const pdfUrl ="src/achives/CV WILLIAM DAVID MORALES PINEDA.pdf"
     const link = document.createElement('a')
     link.href= pdfUrl;
     link.setAttribute('download', 'CV WILLIAM DAVID MORALES PINEDA')
