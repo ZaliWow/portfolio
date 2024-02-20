@@ -58,6 +58,9 @@ const handleDownload =()=>{
                 
                 <object className="svg-imagen" data="src\images\2.svg" type="image/svg+xml"></object>
             </div>
+            <a href="https://firebasestorage.googleapis.com/v0/b/bdd-proyecto-grado.appspot.com/o/CV%20WILLIAM%20DAVID%20MORALES%20PINEDA.pdf?alt=media&token=14edfd78-75f5-4f97-a4d9-ac996eac990e" download="CV WILLIAM DAVID MORALES PINEDA">
+                DESCARGAR
+            </a>
            
         </div>
     )
