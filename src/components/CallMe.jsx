@@ -13,7 +13,7 @@ export function CallMe(params) {
 
 
 const handleDownload =()=>{
-    const pdfUrl ="src\achives\CV WILLIAM DAVID MORALES PINEDA.pdf"
+    const pdfUrl ="src/achives/CV WILLIAM DAVID MORALES PINEDA.pdf"
     const link = document.createElement('a')
     link.href= pdfUrl;
     link.setAttribute('download', 'CV WILLIAM DAVID MORALES PINEDA')
