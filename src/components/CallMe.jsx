@@ -1,25 +1,28 @@
 import "../styles/content.css"
 import "../styles/callme.css"
-import GitHubIcon from '@mui/icons-material/GitHub';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import MailIcon from '@mui/icons-material/Mail';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { BottonLinkedin } from "./BottonLinkedin";
 import { BottonWhatsapp } from "./BottonWhatsapp";
 import { BottonGithub } from "./BottonGithub";
 import { BottonEmail } from "./BottonMail";
+import React, { useEffect, useState } from 'react';
+
 
 export function CallMe(params) {
+ 
+
+
 
 
 const handleDownload =()=>{
-    const pdfUrl ="src/achives/CV WILLIAM DAVID MORALES PINEDA.pdf"
+  const pdfUrl = "src/achives/CV WILLIAM DAVID MORALES PINEDA.pdf"
     const link = document.createElement('a')
     link.href= pdfUrl;
     link.setAttribute('download', 'CV WILLIAM DAVID MORALES PINEDA')
     document.body.appendChild(link)
     link.click();
     document.body.removeChild(link)
+   
+    console.log(pdfUrl)
 }
 
 
@@ -59,6 +62,7 @@ const handleDownload =()=>{
                 <object className="svg-imagen" data="src\images\2.svg" type="image/svg+xml"></object>
             </div>
            
+    
         </div>
     )
 }
