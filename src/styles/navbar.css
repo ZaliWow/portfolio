@@ -15,7 +15,8 @@ body {
     background-color:rgb(168, 19, 62);
     color: #fff;
     margin: 0;
-   
+   top:0;
+   z-index: 1000;
      /* Puedes ajustar el ancho según tus necesidades */
   }
 
@@ -47,7 +48,7 @@ margin-top: -90px;
   
     
   }
-  @media screen and (max-width : 899px)and (min-height: 600px){
+  @media screen and (max-width : 899px){
     .nav{
       display:flex;
       width:100%;

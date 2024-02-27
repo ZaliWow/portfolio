@@ -42,11 +42,10 @@ h1{
     color: rgb(0, 0, 0);
     font-family: 'Press Start 2P';
 }
-@media screen and (max-width : 899px) and (min-height: 600px){
+@media screen and (max-width : 899px) {
     .content{
         display: block;
         color: black;
-        margin-right: 50%;
         margin-top: 25%;
         width: 100%;
         height: 10%;

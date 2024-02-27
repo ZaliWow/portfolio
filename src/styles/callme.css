@@ -108,7 +108,7 @@
   @media screen and (max-width : 899px){
     .bodycallme{
       display: block;
-        margin-right: 50%;
+      
         margin-top: 25%;
         width: 100%;
         height: 10%;
@@ -116,7 +116,16 @@
         justify-content: center;
       text-align: center;
       border-bottom: 1px solid;
+      
   
+    }
+    .info{
+      justify-content: end;
+    text-align:start;
+    padding: 30px 100px;
+    font-family: 'Press Start 2P';
+   
+      
     }
   }
  
