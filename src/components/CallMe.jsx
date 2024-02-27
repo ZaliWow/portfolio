@@ -55,11 +55,11 @@ const handleDownload =()=>{
             </div>
             <div className="desc">
               
-                <object className="svg-imagen" data="src\images\1.svg" type="image/svg+xml"></object>
+                <object className="svg-imagen" data="images\1.svg" type="image/svg+xml"></object>
                
                   <button className="descargarcv" onClick={handleDownload}>DESCARGAR CV</button>
                 
-                <object className="svg-imagen" data="src\images\2.svg" type="image/svg+xml"></object>
+                <object className="svg-imagen" data="images\2.svg" type="image/svg+xml"></object>
             </div>
            
     

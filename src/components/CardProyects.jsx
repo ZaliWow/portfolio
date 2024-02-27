@@ -80,13 +80,13 @@ setShow(true)
 
 
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="add to favorites" onClick={handleLinkProyect} >
         
-        <Button variant='danger' onClick={handleLinkProyect} sx={{ color:grey[600]}}><LinkProyectButton></LinkProyectButton></Button>
+        <LinkProyectButton></LinkProyectButton>
                    
         </IconButton>
-        <IconButton aria-label="add to favorites">
-        <Button variant='dark' onClick={handleViewProyect}>     <Flotante herramientas={herramientas} viewproyect={viewproyect}></Flotante>      </Button>    
+        <IconButton aria-label="add to favorites" onClick={handleViewProyect}>
+           <Flotante herramientas={herramientas} viewproyect={viewproyect}></Flotante> 
         </IconButton>
         
         <ExpandMore
