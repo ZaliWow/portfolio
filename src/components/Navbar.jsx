@@ -10,7 +10,10 @@ export function Navbar({}) {
 <img src="/images/fotoperfil.jpg" alt="mi foto de perfil" />
          
 <div className="me">
-    <h2>Hola, me llamo David.</h2>
+    <div className="text-animation">
+    Hola, me llamo David.
+    </div>
+   
 <h5>Ingeniero de Sistemas, enfocado en el desarrollo de soluciones y aplicaciones Frontend.</h5>
 </div>
 </div>

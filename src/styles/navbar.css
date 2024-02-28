@@ -10,8 +10,8 @@ body {
     display: block;
     justify-content: center;
     position: fixed;
-    width:50vh ;
-    height: 100vh;
+    width:auto;
+    height: auto;
     background-color:rgb(168, 19, 62);
     color: #fff;
     margin: 0;
@@ -33,13 +33,37 @@ body {
 .me{
 margin-top: -90px;
 }
-.me h2 {
-  text-align: center;
-    margin: 0;
-    font-family: 'Press Start 2P';
 
-    
+
+@keyframes textAnimation {
+  from{
+    width: 0;
   }
+
+  
+}
+.text-animation{
+  
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: textAnimation 2s steps(10) forwards;
+  
+}
+@keyframes repeat{
+  50% {
+content: "|";
+  }
+  
+}
+.text-animation::after{
+  content: "|";
+  display:inline-block;
+animation: repeat 0.7s infinite;
+
+}
+
+
 .me h5 {
  text-align: end;
     font-family: 'Press Start 2P';
@@ -50,17 +74,17 @@ margin-top: -90px;
   }
   @media screen and (max-width : 899px){
     .nav{
-      display:flex;
+      display:block;
       width:auto;
-      height: 15%;
+      height:23%;
      
     }
     .nav img{
    
-      margin-left:0vh;
-      margin-top: 2%;
-       height: 200px;
-       width: 200px;
+      margin-left:-9%;
+      margin-top: 30%;
+       height: 120px;
+       width: 120px;
        border-top: 0px;
  
      }

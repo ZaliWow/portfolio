@@ -24,7 +24,7 @@
     padding: 0px;
     width: 120px;
     height: 80px;
-   background-color: blue;
+  
     margin: 1px;
 }
 .contact button {
@@ -113,7 +113,7 @@
      
         margin-top: 25%;
         width: 100vw;
-        height: 10%;
+        height: auto;
         margin-left: 0vw;
         margin-right: 0vw;
         justify-content: center;
@@ -125,8 +125,8 @@
     }
     .info{
       justify-content: end;
-    text-align:start;
-    padding: 30px 100px;
+    text-align:center;
+    padding: 30px 20px;
     font-family: 'Press Start 2P';
    
    
@@ -140,7 +140,7 @@
     margin-left: 0px;
       width: auto;
       height: 200px;
-      background-color: black;
+
     
   
      
