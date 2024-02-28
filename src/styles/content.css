@@ -47,11 +47,13 @@ h1{
         display: block;
         color: black;
         margin-top: 25%;
-        width: 100%;
+        width: 100vw;
         height: 10%;
-        justify-content: center;
+        justify-content: start;
+        margin-left: 0vw;
       text-align: center;
       border-bottom: 1px solid;
+      background-color: bisque;
   
     }
 }

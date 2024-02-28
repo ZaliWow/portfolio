@@ -14,6 +14,7 @@
     display: flex; 
     justify-content: center; 
    margin-top: 4%;
+  
 }
 .contact{
     margin-top: 2%;
@@ -23,7 +24,7 @@
     padding: 0px;
     width: 120px;
     height: 80px;
-    
+   
     margin: 1px;
 }
 .contact button {
@@ -93,6 +94,7 @@
     margin-right: auto;
     width: 700px;
     height: 200px;
+   
   
 
    
@@ -108,11 +110,12 @@
   @media screen and (max-width : 899px){
     .bodycallme{
       display: block;
-      
+      background-color: blueviolet;
         margin-top: 25%;
-        width: 100%;
+        width: 100vw;
         height: 10%;
-      
+        margin-left: 0vw;
+        margin-right: 0vw;
         justify-content: center;
       text-align: center;
       border-bottom: 1px solid;
@@ -126,6 +129,18 @@
     font-family: 'Press Start 2P';
    
       
+    }
+    .desc{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    margin-right: 0px;
+      width: 500px;
+      height: 200px;
+      background-color: black;
+    
+  
+     
     }
   }
  

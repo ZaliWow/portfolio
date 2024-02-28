@@ -32,6 +32,7 @@
    
     align-items: center;
     margin: 5%;
+    background-color: brown;
 }
 .figma{
     margin-left: 2%;
@@ -56,25 +57,26 @@
 @media screen and (max-width : 899px){
     .bodyproyects {
       display: block;
+      margin-left: 0vw;
 
-  
-
+    background-color: aqua;
       margin-top: 25%;
-      width: 100%;
+      width: 100vw;
       height: 50%;
-      justify-content: center;
+      justify-content:center;
     text-align: center;
     border-bottom: 1px solid;
 
     }
    .end{
-    background-color: black;
+    background-color: rgb(219, 14, 14);
     color: white;
     margin-left: 0%;
     margin-top: 5vw;
-    width: 100%;
+    width: 100vw;
+    height: 50%;
     text-align: center;
   
-    height: 100%; 
+   
    }
   }
