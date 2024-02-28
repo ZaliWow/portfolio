@@ -10,8 +10,8 @@ body {
     display: block;
     justify-content: center;
     position: fixed;
-    width:auto;
-    height: auto;
+    width:27%;
+    height: 100%;
     background-color:rgb(168, 19, 62);
     color: #fff;
     margin: 0;
@@ -43,12 +43,10 @@ margin-top: -90px;
   
 }
 .text-animation{
-  
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: textAnimation 2s steps(10) forwards;
-  
+  text-align: end;
+  font-family: 'Press Start 2P';
+ margin: 0;
+ padding: 0 5px;
 }
 @keyframes repeat{
   50% {
@@ -60,7 +58,7 @@ content: "|";
   content: "|";
   display:inline-block;
 animation: repeat 0.7s infinite;
-
+margin-left: 2px;
 }
 
 
