@@ -1,6 +1,6 @@
 export function AbautMe(params) {
     return(
-        <div className="content">
+        <div className="contentInfo">
             <h1>Sobre mí</h1>
         <div className="info">
         

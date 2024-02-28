@@ -59,9 +59,8 @@
       display: block;
       margin-left: 0vw;
 
-    background-color: aqua;
       margin-top: 25%;
-      width: 100vw;
+      width: auto;
       height: 50%;
       justify-content:center;
     text-align: center;
@@ -79,4 +78,21 @@
   
    
    }
+   .proyect{
+    display: block;
+    align-items: center;
+    justify-content: center;
+width: auto;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 10%;
+}
+   .containercards{
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    margin: 1%;
+  
+}
   }
