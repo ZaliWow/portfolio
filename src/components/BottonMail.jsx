@@ -1,5 +1,11 @@
 import MailIcon from '@mui/icons-material/Mail';
+import { AlertCopy } from './AlertCopy';
+import { useState } from 'react';
+
 export function BottonEmail(params) {
+
+
+  const [openAlert, setOpenAlert] = useState(false)
   const textoACopiar = 'morales.william@correounivalle.edu.co';
 
   const copiarAlPortapapeles = () => {
@@ -17,7 +23,7 @@ export function BottonEmail(params) {
     // Eliminar el elemento temporal del DOM
     document.body.removeChild(elementoTemporal);
 
-    alert('Texto copiado al portapapeles: ' + textoACopiar);
+    setOpenAlert(true)
   };
 
     
@@ -28,7 +34,7 @@ export function BottonEmail(params) {
            
               <MailIcon fontSize='large'></MailIcon>
             </button>
-      
+      <AlertCopy openAlert={openAlert} setOpenAlert={setOpenAlert}></AlertCopy>
           </div>
         );
       

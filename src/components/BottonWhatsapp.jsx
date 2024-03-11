@@ -1,5 +1,8 @@
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { AlertCopyWhatsapp } from './AlertCopyWhatsapp';
+import { useState } from 'react';
 export function BottonWhatsapp(params) {
+  const [openAlert, setOpenAlert] = useState(false)
   const textoACopiar = '+57 3108370792';
   const copiarAlPortapapeles = () => {
     // Crear un elemento de texto temporal
@@ -15,15 +18,16 @@ export function BottonWhatsapp(params) {
 
     // Eliminar el elemento temporal del DOM
     document.body.removeChild(elementoTemporal);
-
-    alert('Texto copiado al portapapeles: ' + textoACopiar);
+setOpenAlert(true)
+  
   };
       
         return (
           <div className="contact">
             <button  onClick={copiarAlPortapapeles}>
-              <WhatsAppIcon fontSize='large'></WhatsAppIcon>
+              <WhatsAppIcon fontSize='large' ></WhatsAppIcon>
             </button>
+<AlertCopyWhatsapp openAlert={openAlert} setOpenAlert={setOpenAlert}></AlertCopyWhatsapp>
           </div>
         );
       
