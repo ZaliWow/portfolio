@@ -1,7 +1,7 @@
 export function AbautMe(params) {
     return(
         <div className="contentInfo">
-            <h1>Sobre mí</h1>
+            <h1 className="tracking-in-expand">Sobre mí</h1>
         <div className="info">
         
   <h6>William David Morales Pineda</h6>

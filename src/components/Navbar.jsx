@@ -11,7 +11,7 @@ export function Navbar({}) {
          
 <div className="me">
     <h2 className="text-animation">
-    Hola, me llamo David.
+    Hola, soy David.
     </h2>
    
 <h5>Ingeniero de Sistemas, enfocado en el desarrollo de soluciones y aplicaciones Frontend.

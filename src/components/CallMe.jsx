@@ -4,6 +4,7 @@ import { BottonLinkedin } from "./BottonLinkedin";
 import { BottonWhatsapp } from "./BottonWhatsapp";
 import { BottonGithub } from "./BottonGithub";
 import { BottonEmail } from "./BottonMail";
+import "../styles/animations.css"
 import React, { useEffect, useState } from 'react';
 
 
@@ -30,37 +31,49 @@ const handleDownload =()=>{
 
     return(
         <div className="bodycallme">
-            <h1>Contáctame</h1>
+            <div  ><h1 >Contáctame</h1></div>
             
+          
             <div className="callme">
                 <div className="contact">
+                    <div className="text-pop-up-top">
                 <BottonGithub></BottonGithub>
-                
+                </div>
                 </div>
                 <div className="contact">
+                    <div className="text-pop-up-top">
                 <BottonWhatsapp></BottonWhatsapp>
-               
+                </div>
+                
               
                 </div>
                 <div className="contact">
-                <BottonEmail></BottonEmail>              
+                <div className="text-pop-up-top">
+                <BottonEmail></BottonEmail>  
+                </div>            
               
                 </div>
                 <div className="contact">
+                <div className="text-pop-up-top">
                 <BottonLinkedin></BottonLinkedin>
-               
+                </div>
                       
             
                     
                 </div>
             </div>
             <div className="desc">
-              
+           
+              <div className="img-flicker-in-glow">
                 <object className="svg-imagen" data="images\1.svg" type="image/svg+xml"></object>
                
+                </div>
                   <button className="descargarcv" onClick={handleDownload}>DESCARGAR CV</button>
-                
+               
+                <div className="img-flicker-in-glow">
                 <object className="svg-imagen" data="images\2.svg" type="image/svg+xml"></object>
+              
+                </div>
             </div>
            
     

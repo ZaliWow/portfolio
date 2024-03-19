@@ -3,7 +3,7 @@ import "../styles/content.css"
 export function FrameWorks(params) {
     return(
         <div className="content">
-<h1>FrameWorks</h1>
+<h1 className="tracking-in-expand">FrameWorks</h1>
 
 
 <div className="tecnologys">

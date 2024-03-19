@@ -5,7 +5,7 @@ import { Copy } from "./Copy";
 export function Content() {
     return(
         <div className="content">
-            <h1>Tecnologías</h1>
+            <h1 className="tracking-in-expand">Tecnologías</h1>
 
 
 <div className="tecnologys">
