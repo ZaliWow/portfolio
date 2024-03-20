@@ -31,32 +31,32 @@ const handleDownload =()=>{
 
     return(
         <div className="bodycallme">
-            <div  ><h1 >Contáctame</h1></div>
+            <div className="tracking-in-expand"><h1 >Contáctame</h1></div>
             
           
             <div className="callme">
                 <div className="contact">
-                    <div className="text-pop-up-top">
+                    
                 <BottonGithub></BottonGithub>
-                </div>
+               
                 </div>
                 <div className="contact">
-                    <div className="text-pop-up-top">
+                    
                 <BottonWhatsapp></BottonWhatsapp>
-                </div>
+             
                 
               
                 </div>
                 <div className="contact">
-                <div className="text-pop-up-top">
+               
                 <BottonEmail></BottonEmail>  
-                </div>            
+                     
               
                 </div>
                 <div className="contact">
-                <div className="text-pop-up-top">
+             
                 <BottonLinkedin></BottonLinkedin>
-                </div>
+             
                       
             
                     
