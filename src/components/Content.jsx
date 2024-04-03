@@ -11,15 +11,15 @@ export function Content() {
 <div className="tecnologys">
 <div className="tecno">
     
-    <object class="svg-tecno" type="image/svg+xml" data="public/images/HTML.svg" alt="" />
+    <object class="svg-tecno" type="image/svg+xml" data="images/HTML.svg" alt="" />
     <p>HTML5</p>
 </div>
 <div className="tecno">
-    <object className="svg-tecno" type="image/svg+xml" data="public/images/css.svg" alt="" />
+    <object className="svg-tecno" type="image/svg+xml" data="images/css.svg" alt="" />
 <p>CSS3</p>
 </div>
 <div className="tecno">
-    <object className="svg-tecno" type="image/svg+xml" data="public/images/JS.svg" alt="" />
+    <object className="svg-tecno" type="image/svg+xml" data="images/JS.svg" alt="" />
 <p>JavaScript</p>
 </div>
 
@@ -28,12 +28,12 @@ export function Content() {
 
 
 <div className="tecno">
-    <object className="svg-tecno" type="image/svg+xml" data="public/images/postgress.svg" alt="" />
+    <object className="svg-tecno" type="image/svg+xml" data="images/postgress.svg" alt="" />
 <p>PostgreSQL</p>
 
 </div>
 <div className="tecno">
-    <object className="svg-tecno" type="image/svg+xml" data="public\images\figma.svg" alt="" />
+    <object className="svg-tecno" type="image/svg+xml" data="images\figma.svg" alt="" />
 <p>Figma</p>
 
 </div>
