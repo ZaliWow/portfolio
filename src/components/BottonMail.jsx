@@ -1,8 +1,9 @@
 import MailIcon from '@mui/icons-material/Mail';
 import { AlertCopy } from './AlertCopy';
 import { useState } from 'react';
+import { Button } from '@mui/material';
 
-export function BottonEmail(params) {
+export function BottonEmail({sizeicon}) {
 
 
   const [openAlert, setOpenAlert] = useState(false)
@@ -30,12 +31,12 @@ export function BottonEmail(params) {
       
         return (
           <div className="contact">
-            <button  onClick={copiarAlPortapapeles}>
+            <Button  onClick={copiarAlPortapapeles} variant="dark">
            
-              <MailIcon fontSize='large'></MailIcon>
-            </button>
+              <MailIcon sx={{fontSize :sizeicon}}></MailIcon>
+            </Button>
       <AlertCopy openAlert={openAlert} setOpenAlert={setOpenAlert}></AlertCopy>
-          </div>
+           </div> 
         );
       
     

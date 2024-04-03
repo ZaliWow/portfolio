@@ -1,3 +1,4 @@
+
 .bodyproyects {
     display: block;
     margin-left: 30vw;
@@ -7,7 +8,8 @@
     justify-content: center;
   text-align: center;
   align-items: center;
-  
+  background-color: black;
+ color: white
   
  
 

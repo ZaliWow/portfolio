@@ -7,14 +7,16 @@
     justify-content: center;
   text-align: center;
   border-bottom: 1px solid;
- 
+ background-color: black;
+ color: white
 }
 .contentInfo {
     display: block;
     margin-left: 30vw;
     margin-top: 5vw;
     width: 68.5vw;
-
+    background-color: black;
+    color: white;
     height: 60vh;
     justify-content: center;
   text-align: center;
@@ -48,15 +50,24 @@ h1{
     width: 150px;
     height: 150px;
     background:none;
-    filter: drop-shadow(
-        red
-    );
+  
 }
 .tecno p{
     padding: 10px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Press Start 2P';
 }
+
+.svg-tecno{
+    
+    filter: drop-shadow(
+        0px 0px 40px rgb(255, 255, 255)
+     );
+     
+    width: 150px;
+    height: 150px;
+}
+
 @media screen and (max-width : 899px) {
     .content{
         display: block;

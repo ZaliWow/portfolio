@@ -1,7 +1,7 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import "../styles/callme.css"
-
-export function BottonLinkedin(params) {
+import { Button } from '@mui/material';
+export function BottonLinkedin({sizeicon}) {
    
         const handleLinkedin = () => {
        
@@ -10,10 +10,10 @@ export function BottonLinkedin(params) {
         
           
             return (
-              <div className="contact">
-                <button  onClick={handleLinkedin}>
-                  <LinkedInIcon fontSize='large'></LinkedInIcon>
-                </button>
+              <div className="contact" >
+                <Button onClick={handleLinkedin}variant="dark">
+                  <LinkedInIcon sx={{fontSize :sizeicon}}></LinkedInIcon>
+                </Button>
               </div>
             );
     

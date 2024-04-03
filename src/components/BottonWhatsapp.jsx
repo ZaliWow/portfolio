@@ -1,7 +1,10 @@
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { AlertCopyWhatsapp } from './AlertCopyWhatsapp';
+import { WhatsApp } from "@mui/icons-material";
+import { Button } from '@mui/material';
+
 import { useState } from 'react';
-export function BottonWhatsapp(params) {
+export function BottonWhatsapp({sizeicon}) {
   const [openAlert, setOpenAlert] = useState(false)
   const textoACopiar = '+57 3108370792';
   const copiarAlPortapapeles = () => {
@@ -24,9 +27,9 @@ setOpenAlert(true)
       
         return (
           <div className="contact">
-            <button  onClick={copiarAlPortapapeles}>
-              <WhatsAppIcon fontSize='large' ></WhatsAppIcon>
-            </button>
+            <Button onClick={copiarAlPortapapeles} variant="dark">
+              <WhatsApp sx={{fontSize :sizeicon}} ></WhatsApp>
+            </Button>
 <AlertCopyWhatsapp openAlert={openAlert} setOpenAlert={setOpenAlert}></AlertCopyWhatsapp>
           </div>
         );

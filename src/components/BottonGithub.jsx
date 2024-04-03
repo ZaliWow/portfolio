@@ -1,5 +1,7 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
-export function BottonGithub(params) {
+import { GitHub } from "@mui/icons-material";
+import { Button } from '@mui/material';
+export function BottonGithub({sizeicon}) {
     const handleGithubClick = () => {
        
        
@@ -9,9 +11,9 @@ export function BottonGithub(params) {
       
         return (
           <div className="contact">
-            <button  onClick={handleGithubClick}>
-              <GitHubIcon fontSize='large'></GitHubIcon>
-            </button>
+            <Button  onClick={handleGithubClick} variant='dark'>
+              <GitHub sx={{fontSize :sizeicon}}></GitHub>
+            </Button>
           </div>
         );
     }

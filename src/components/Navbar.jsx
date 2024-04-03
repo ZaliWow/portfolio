@@ -34,26 +34,24 @@ export function Navbar({}) {
 
                 <div className="navsocialmedia">
                     
-                    <Button variant="dark">
-                    <GitHub sx={{fontSize :20}}></GitHub>
-                </Button>
+                    <BottonGithub sizeicon={20}></BottonGithub>
                 
                
                 </div>
                 <div className="navsocialmedia">
                     
-                <Button variant="dark">
-                    <WhatsApp sx={{fontSize :20}}></WhatsApp>
-                    </Button>
+                
+                    <BottonWhatsapp sizeicon={20} ></BottonWhatsapp>
+                   
                
              
                 
               
                 </div>
                 <div className="navsocialmedia">
-                <Button variant="dark">
-                    <Email sx={{fontSize :20}}></Email>
-                </Button>
+                
+                    <BottonEmail sizeicon={20}></BottonEmail>
+       
                 
                      
               
@@ -61,9 +59,8 @@ export function Navbar({}) {
                 <div className="navsocialmedia">
              
                 
-                <Button variant="dark">
-                <LinkedIn sx={{fontSize :20}}></LinkedIn>
-                </Button>
+                <BottonLinkedin sizeicon={20}></BottonLinkedin>
+                
                       
             
                     

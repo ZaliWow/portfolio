@@ -4,6 +4,11 @@ import { BottonLinkedin } from "./BottonLinkedin";
 import { BottonWhatsapp } from "./BottonWhatsapp";
 import { BottonGithub } from "./BottonGithub";
 import { BottonEmail } from "./BottonMail";
+
+
+import { Email } from "@mui/icons-material";
+import { LinkedIn } from "@mui/icons-material";
+import { Button } from "@mui/material";
 import "../styles/animations.css"
 import React, { useEffect, useState } from 'react';
 
@@ -37,25 +42,25 @@ const handleDownload =()=>{
             <div className="callme">
                 <div className="contact">
                     
-                <BottonGithub></BottonGithub>
+                <BottonGithub sizeicon={45}></BottonGithub>
                
                 </div>
                 <div className="contact">
                     
-                <BottonWhatsapp></BottonWhatsapp>
-             
                 
+             
+                <BottonWhatsapp sizeicon={45}></BottonWhatsapp>
               
                 </div>
                 <div className="contact">
                
-                <BottonEmail></BottonEmail>  
+                <BottonEmail sizeicon={45}></BottonEmail>  
                      
               
                 </div>
                 <div className="contact">
              
-                <BottonLinkedin></BottonLinkedin>
+                <BottonLinkedin sizeicon={45}></BottonLinkedin>
              
                       
             
