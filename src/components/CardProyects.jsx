@@ -22,7 +22,7 @@ import { Alerta } from './Alert';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
-  return <IconButton {...other} />;
+  return <IconButton sx={{color:'white'}} {...other} />;
 })(({ theme, expand }) => ({
   transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
   marginLeft: 'auto',
@@ -56,9 +56,17 @@ setShow(true)
   }}
 
 
+
+
+
+
+
+
+
+
   return ( 
     <>
-    <Card sx={{ minWidth: 300,  }}>
+    <Card sx={{ maxWidth: 300, minWidth:300, backgroundColor:'black', color:'white' }}>
       <CardHeader
       avatar={
         <Avatar src={presentation}>
@@ -80,22 +88,23 @@ setShow(true)
 
 
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" onClick={handleLinkProyect} >
+        <IconButton  sx={{color:'white'}}  aria-label="add to favorites" onClick={handleLinkProyect} >
         
         <LinkProyectButton></LinkProyectButton>
                    
         </IconButton>
-        <IconButton aria-label="add to favorites" onClick={handleViewProyect}>
+        <IconButton  sx={{color:'white'}}  aria-label="add to favorites" onClick={handleViewProyect}>
            <Flotante herramientas={herramientas} viewproyect={viewproyect}></Flotante> 
         </IconButton>
         
         <ExpandMore
+         sx={{color:'white'}} 
           expand={expanded}
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <InfoOutlined sx={{ color:grey[900]}} />
+          <InfoOutlined sx={{ color:'white'}} />
         </ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>

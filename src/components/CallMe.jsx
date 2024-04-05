@@ -36,7 +36,7 @@ const handleDownload =()=>{
 
     return(
         <div className="bodycallme">
-            <div className="tracking-in-expand"><h1 >Contáctame</h1></div>
+            <div ><h1 >Contáctame</h1></div>
             
           
             <div className="callme">

@@ -97,7 +97,7 @@ viewproyect:""}
     return(
        
 <div className="bodyproyects">
-                <h1 className="tracking-in-expand">Proyects</h1>
+                <h1 >Proyects</h1>
     <div className="typeproyect">
 
         <div className="proyect">

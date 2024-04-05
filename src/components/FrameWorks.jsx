@@ -3,7 +3,7 @@ import "../styles/content.css"
 export function FrameWorks(params) {
     return(
         <div className="content">
-<h1 className="tracking-in-expand">FrameWorks</h1>
+<h1 >FrameWorks</h1>
 
 
 <div className="tecnologys">
@@ -26,7 +26,7 @@ export function FrameWorks(params) {
 <div className="tecnologys">
 
 <div className="tecno">
-    <object className="svg-tecno" type="image/svg+xml" data="images/MaterialUi.svg" alt="" />
+<object className="svg-tecno" type="image/svg+xml" data="images/MaterialUI.svg" alt="" />
 <p>Material UI</p>
 </div>
 <div className="tecno">
