@@ -74,10 +74,10 @@
 @media screen and (max-width : 899px){
     .bodyproyects {
       display: block;
-    
+      width: 100vw;
   margin-left: 0vw;
       margin-top: 25%;
-      width: auto;
+   
       height: auto;
       justify-content:center;
     text-align: center;
