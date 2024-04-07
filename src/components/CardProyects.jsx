@@ -17,6 +17,7 @@ import { Button } from '@mui/material';
 import { Height, InfoOutlined } from '@mui/icons-material';
 import { grey, yellow } from "@mui/material/colors";
 import { Alerta } from './Alert';
+import { useEffect } from 'react';
 
 
 
@@ -31,7 +32,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export function CardProyects({herramientas, tittle, avatar, description, presentation, urlproyect, viewproyect}) {
+export function CardProyects({ mode, herramientas, tittle, avatar, description, presentation, urlproyect, viewproyect}) {
   const [expanded, setExpanded] = React.useState(false);
   const [show, setShow] = React.useState(false);
 
@@ -63,10 +64,9 @@ setShow(true)
 
 
 
-
-  return ( 
+if(mode === true)return ( 
     <>
-    <Card sx={{ maxWidth: 300, minWidth:300, backgroundColor:'black', color:'white' }}>
+    <Card sx={{backgroundColor:'black', maxWidth:300, minWidth:300 , color:'white'}} >
       <CardHeader
       avatar={
         <Avatar src={presentation}>
@@ -88,7 +88,7 @@ setShow(true)
 
 
       <CardActions disableSpacing>
-        <IconButton  sx={{color:'white'}}  aria-label="add to favorites" onClick={handleLinkProyect} >
+        <IconButton  sx={{color:'white'}}   aria-label="add to favorites" onClick={handleLinkProyect} >
         
         <LinkProyectButton></LinkProyectButton>
                    
@@ -120,4 +120,64 @@ setShow(true)
     
     </>
   );
+
+else if(mode===false) return(
+  <>
+  <Card sx={{backgroundColor:'white', maxWidth:300, minWidth:300 , color:'black'}} >
+    <CardHeader
+    avatar={
+      <Avatar src={presentation}>
+         </Avatar>
+    }
+      
+      title={tittle}
+      
+    />
+    <Alerta show={show} setShow={setShow}></Alerta>
+    <CardMedia
+      component="img"
+      height="150"
+      width="200"
+      image={avatar}
+      alt="Paella dish"
+    />
+   
+
+
+    <CardActions disableSpacing>
+      <IconButton  sx={{color:'black'}}   aria-label="add to favorites" onClick={handleLinkProyect} >
+      
+      <LinkProyectButton></LinkProyectButton>
+                 
+      </IconButton>
+      <IconButton  sx={{color:'black'}}  aria-label="add to favorites" onClick={handleViewProyect}>
+         <Flotante herramientas={herramientas} viewproyect={viewproyect}></Flotante> 
+      </IconButton>
+      
+      <ExpandMore
+       sx={{color:'black'}} 
+        expand={expanded}
+        onClick={handleExpandClick}
+        aria-expanded={expanded}
+        aria-label="show more"
+      >
+        <InfoOutlined sx={{ color:'black'}} />
+      </ExpandMore>
+    </CardActions>
+    <Collapse in={expanded} timeout="auto" unmountOnExit>
+      <CardContent>
+        <Typography paragraph>Descripción:</Typography>
+        <Typography paragraph>
+          {description}
+        </Typography>
+        
+      </CardContent>
+    </Collapse>
+  </Card>
+  
+  </>
+);
+
+
+
 }

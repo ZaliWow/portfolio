@@ -1,33 +1,33 @@
 import "../styles/navbar.css"
+import "../styles/Proyects.css"
 import { BottonLinkedin } from "./BottonLinkedin";
 import { BottonWhatsapp } from "./BottonWhatsapp";
 import { BottonGithub } from "./BottonGithub";
 import { BottonEmail } from "./BottonMail";
-import { grey } from "@mui/material/colors";
-import { Button } from "@mui/material";
-import { LunchDining } from "@mui/icons-material";
-import { WhatsApp } from "@mui/icons-material";
-import { Email } from "@mui/icons-material";
-import { LinkedIn } from "@mui/icons-material";
-import { GitHub } from "@mui/icons-material";
 
 
-export function Navbar({}) { 
+
+export function Navbar({mode}) { 
     return(
-       
-<div>
+
+
 <div className="nav">
+<div className={mode ?"nav-light-mode": "nav-dark-mode" }>
+    <div className="up-site">
 <div className="me">
     <h2 >
     Hola, soy David.
     </h2>  
 <h5>Ingeniero de Sistemas, enfocado en el desarrollo de soluciones y aplicaciones Frontend.
 </h5>
+
+
 </div>
+
 <img src="/images/fotoperfil.jpg" alt="mi foto de perfil" />
-         
+</div>       
 
-
+<div className="down-site">
 
 <div className="socialmedia">
 
@@ -72,7 +72,7 @@ export function Navbar({}) {
 </div>
 </div>
 
-
+</div>
 
 
 

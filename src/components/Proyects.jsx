@@ -4,7 +4,7 @@ import { CardProyects } from "./CardProyects"
 import { useState } from "react"
 
 
-export function Proyects({}) {
+export function Proyects({mode}) {
     
 
     const [listOfProyect, setListOfProyect] = useState([
@@ -96,6 +96,7 @@ viewproyect:""}
 ])
     return(
        
+       <div className={mode? 'dark-mode' : 'light-mode' }>
 <div className="bodyproyects">
                 <h1 >Proyects</h1>
     <div className="typeproyect">
@@ -104,6 +105,8 @@ viewproyect:""}
 
             <div className="containercards">
                 <CardProyects 
+                
+                mode={mode}
                 urlproyect={listOfProyect[0].urlproyect} 
                 presentation={listOfProyect[0].presentation}
                 avatar={listOfProyect[0].avatar} 
@@ -115,6 +118,7 @@ viewproyect:""}
             </div> 
             <div className="containercards">
                 <CardProyects 
+                mode={mode}
                 urlproyect={listOfProyect[3].urlproyect} 
                 presentation={listOfProyect[3].presentation}
                 avatar={listOfProyect[3].avatar} 
@@ -126,6 +130,7 @@ viewproyect:""}
             </div>     
             <div className="containercards">
                 <CardProyects 
+                mode={mode}
                 urlproyect={listOfProyect[5].urlproyect} 
                 presentation={listOfProyect[5].presentation}
                 avatar={listOfProyect[5].avatar} 
@@ -137,6 +142,7 @@ viewproyect:""}
             </div> 
             <div className="containercards">
                 <CardProyects 
+                mode={mode}
                 urlproyect={listOfProyect[6].urlproyect} 
                 presentation={listOfProyect[6].presentation}
                 avatar={listOfProyect[6].avatar} 
@@ -148,6 +154,7 @@ viewproyect:""}
             </div> 
             <div className="containercards">
                 <CardProyects 
+                mode={mode}
                 urlproyect={listOfProyect[8].urlproyect} 
                 presentation={listOfProyect[8].presentation}
                 avatar={listOfProyect[8].avatar} 
@@ -168,6 +175,7 @@ viewproyect:""}
         
             <div className="containercards">
                 <CardProyects 
+                mode={mode}
                 urlproyect={listOfProyect[1].urlproyect}  
                 presentation={listOfProyect[1].presentation} 
                 avatar={listOfProyect[1].avatar} 
@@ -180,6 +188,7 @@ viewproyect:""}
             </div>
             <div className="containercards">
                 <CardProyects 
+                mode={mode}
                 urlproyect={listOfProyect[2].urlproyect} 
                 presentation={listOfProyect[2].presentation}
                 avatar={listOfProyect[2].avatar} 
@@ -191,6 +200,7 @@ viewproyect:""}
             </div>              
             <div className="containercards">
                 <CardProyects 
+                mode={mode}
                 urlproyect={listOfProyect[4].urlproyect} 
                 presentation={listOfProyect[4].presentation}
                 avatar={listOfProyect[4].avatar} 
@@ -202,6 +212,7 @@ viewproyect:""}
             </div> 
             <div className="containercards">
                 <CardProyects 
+                mode={mode}
                 urlproyect={listOfProyect[7].urlproyect} 
                 presentation={listOfProyect[7].presentation}
                 avatar={listOfProyect[7].avatar} 
@@ -217,7 +228,7 @@ viewproyect:""}
         </div>
     </div>
 </div>
-
+</div>
 
 
 

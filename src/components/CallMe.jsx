@@ -13,7 +13,7 @@ import "../styles/animations.css"
 import React, { useEffect, useState } from 'react';
 
 
-export function CallMe(params) {
+export function CallMe({mode}) {
  
 
 
@@ -35,6 +35,7 @@ const handleDownload =()=>{
 
 
     return(
+      <div className={mode? 'dark-mode' : 'light-mode' }>
         <div className="bodycallme">
             <div ><h1 >Contáctame</h1></div>
             
@@ -81,7 +82,7 @@ const handleDownload =()=>{
                 </div>
             </div>
            
-    
+            </div>
         </div>
     )
 }

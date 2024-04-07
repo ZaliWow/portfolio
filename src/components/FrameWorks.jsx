@@ -1,7 +1,8 @@
 import "../styles/content.css"
 
-export function FrameWorks(params) {
+export function FrameWorks({mode}) {
     return(
+        <div className={mode? 'dark-mode' : 'light-mode' }>
         <div className="content">
 <h1 >FrameWorks</h1>
 
@@ -36,7 +37,7 @@ export function FrameWorks(params) {
 
 
 </div>
-
+</div>
         </div>
     )
     

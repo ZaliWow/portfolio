@@ -2,8 +2,9 @@ import "../styles/content.css"
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import { Copy } from "./Copy";
 
-export function Content() {
+export function Content({mode}) {
     return(
+        <div className={mode? 'dark-mode' : 'light-mode' }>
         <div className="content">
             <h1 >Tecnologías</h1>
 
@@ -40,7 +41,7 @@ export function Content() {
 
 
 </div>
-
+</div>
 
         </div>
     )
