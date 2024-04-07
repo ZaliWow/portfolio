@@ -1,5 +1,5 @@
 import "../styles/navbar.css"
-import "../styles/Proyects.css"
+
 import { BottonLinkedin } from "./BottonLinkedin";
 import { BottonWhatsapp } from "./BottonWhatsapp";
 import { BottonGithub } from "./BottonGithub";
